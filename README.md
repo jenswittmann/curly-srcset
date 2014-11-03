@@ -1,1 +1,1 @@
-Snippet for simple srcset Usage in MODX.
+Snippet for simple srcset usage in MODX.
