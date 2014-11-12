@@ -4,7 +4,7 @@
 $sizes = explode(',', $sizes);
 if (count($sizes) > 0) {
     foreach ($sizes as $i => $size) {
-        $sizes[$i] = '[[phpthumbof? &input=`'.$file.'` &options=`w='.$size.'&h=0&q=80`]] '.($size-1).'w';
+        $sizes[$i] = '[[phpthumbof? &input=`'.$file.'` &options=`w='.($size*1.5).'&h=0&q=80`]] '.($size-1).'w';
     }
     return '<img src="[[phpthumbof? &input=`'.$file.'` &options=`w=800&h=0&q=80`]]" srcset="'.implode(',', $sizes).'">';
 }
